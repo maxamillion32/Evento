@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/IMGnotification"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_action_account_circle_40"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/IMGnotification">
+
+        <TextView
+            android:id="@+id/TVnotifictionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="Amr Masoud" />
+
+        <TextView
+            android:id="@+id/TVnotifictionContent"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            tools:text="This is the comment text.."/>
+
+    </LinearLayout>
+</RelativeLayout>
